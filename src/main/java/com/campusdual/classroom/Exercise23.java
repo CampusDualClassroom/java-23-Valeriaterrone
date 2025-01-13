@@ -34,5 +34,4 @@ public class Exercise23 {
         addMapValue(map, "police", new PoliceOfficer("Charles", "Boyle", "B-99"));
         printMapValues(map); // imprimimos los detalles de cada valor que hay en el mapa
     }
-    
 }

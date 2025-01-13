@@ -29,6 +29,7 @@ public class Exercise23 {
         }
     }
 
+
     public static void main(String[] args) {
         Map<String, Person> map = createHashMap(); // creamos el mapa con sus entradas iniciales
         addMapValue(map, "police", new PoliceOfficer("Charles", "Boyle", "B-99"));

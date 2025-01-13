@@ -9,7 +9,7 @@ public class Exercise23 {
      Map<String, Person>  map = new HashMap<>();
 
      map.put("person", new Person("John", "Smith"));
-     map.put("teacher", new Teacher("Maria", "Montesori", "Educación"));
+     map.put("teacher", new Teacher("María", "Montessori", "Educación"));
      map.put("police", new PoliceOfficer("Jake", "Peralta", "B-99"));
      map.put("doctor", new Doctor("Gregory", "House", "Nefrología e infectología"));
 
@@ -17,7 +17,8 @@ public class Exercise23 {
     }
 
     public static Person addMapValue(Map<String, Person> map, String key, Person value) {
-    return map.put(key, value);  // añadimos nueva entrada al mapa
+        map.put(key, value);  // Inserta o sobrescribe el valor
+        return map.get(key);  // Devuelve el objeto insertado
     }
 
     public static void printMapValues(Map<String, Person> map) {
@@ -31,9 +32,7 @@ public class Exercise23 {
 
     public static void main(String[] args) {
         Map<String, Person> map = createHashMap(); // creamos el mapa con sus entradas iniciales
-
         addMapValue(map, "police", new PoliceOfficer("Charles", "Boyle", "B-99"));
-        addMapValue(map, "teacher2", new Teacher("Jane", "Perez", "Matemáticas"));
         printMapValues(map); // imprimimos los detalles de cada valor que hay en el mapa
     }
     

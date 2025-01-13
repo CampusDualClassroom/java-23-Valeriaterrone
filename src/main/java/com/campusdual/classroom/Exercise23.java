@@ -12,7 +12,6 @@ public class Exercise23 {
      map.put("teacher", new Teacher("María", "Montessori", "Educación"));
      map.put("police", new PoliceOfficer("Jake", "Peralta", "B-99"));
      map.put("doctor", new Doctor("Gregory", "House", "Nefrología e infectología"));
-
      return map;
     }
 
